@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top left, 
+      #1f1b44, 
+      #302b76, 
+      #4a4fa0, 
+      #5f7cc3, 
+      #79b4da);
+    background-size: 200% 200%;
+    animation: smoothGradient 40s ease-in-out infinite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  @keyframes smoothGradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+  }
+  
+  /* Шапка */
+  header {
+    background: rgba(0, 56, 102, 0.7); /* Зменшена прозорість */
+    color: #fff;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  .logo {
+      font-size: 2rem;
+      font-weight: bold;
+  }
+  .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+  }
+  .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+      color: #7c57db;
+  }
+  header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  /* Hero */
+  .hero {
+      background: url('https://images.unsplash.com/photo-1585158536990-95a2e38aa4f2?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      animation: fadeIn 1.5s ease-in-out;
+      border-bottom: 4px solid #ffcd0500;
+  }
+  .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+  }
+  .hero p {
+      font-size: 1.5rem;
+  }
+  
+  /* Секції */
+  section {
+      padding: 60px 0;
+      background-color: rgba(240, 240, 240, 0.95); /* Світло-сірий фон для секцій */
+      color: #222;
+      border-radius: 12px;
+      margin: 40px 0;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Карточки */
+  .service-cards {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .card {
+      background: #d1d8e0; /* Трохи темніший відтінок сірого */
+      padding: 30px;
+      border-radius: 15px;
+      flex: 1 1 250px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+  }
+  .card p {
+      font-size: 1.1rem;
+  }
+  .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Галерея */
+  .gallery h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      font-weight: 600;
+  }
+  .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+  }
+  .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  .gallery-grid img:hover {
+      transform: scale(1.03);
+      filter: brightness(1.2);
+  }
+  
+  /* Google форма */
+  .google-form {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+  }
+  iframe {
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Контактна інфа */
+  .contact-info {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      font-weight: 500;
+  }
+  
+  /* Footer */
+  footer {
+    background: rgba(0, 56, 102, 0.7); /* Зменшена прозорість */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+  
+  /* Анімація */
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+  /* Адаптивність */
+  @media (max-width: 768px) {
+      .nav-links {
+          flex-direction: column;
+          gap: 1rem;
+      }
+      .service-cards {
+          flex-direction: column;
+      }
+      .hero h2 {
+          font-size: 2.5rem;
+      }
+      .hero p {
+          font-size: 1.2rem;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .hero h2 {
+          font-size: 2rem;
+      }
+      .hero p {
+          font-size: 1.1rem;
+      }
+      .nav-links {
+          flex-direction: column;
+          align-items: center;
+      }
+  }
+  
