@@ -1,90 +1,137 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TransMove – Послуги перевезень</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TransMove – Послуги перевезень</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">TransMove</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">Про нас</a></li>
-                    <li><a href="#services">Послуги</a></li>
-                    <li><a href="#gallery">Галерея</a></li>
-                    <li><a href="#contact">Контакти</a></li>
-                </ul>
-            </nav>
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Truck_icon.svg/100px-Truck_icon.svg.png" alt="TransMove" />
+      </div>
+
+      <nav class="nav-desktop">
+        <ul class="nav-links">
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+
+        <div class="language-selector">
+          <button id="language-btn">🌐</button>
+          <div id="language-menu" class="language-menu">
+            <a href="#">UA</a>
+            <a href="#">EN</a>
+            <a href="#">PL</a>
+            <a href="#">DE</a>
+          </div>
         </div>
-    </header>
+      </nav>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Надійні перевезення по всій Україні</h2>
-            <p>Швидко. Безпечно. Комфортно.</p>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#about">Про нас</a></li>
+        <li><a href="#services">Послуги</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
+      <div class="mobile-lang">
+        <p>Мова:</p>
+        <a href="#">UA</a>
+        <a href="#">EN</a>
+        <a href="#">PL</a>
+        <a href="#">DE</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-text">
+      <h2>Надійні перевезення по всій Україні</h2>
+      <p>Швидко. Безпечно. Комфортно.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Про компанію</h2>
+      <p>Ми – лідери у сфері перевезень з 10-річним досвідом. Пропонуємо вантажні, пасажирські та спеціальні перевезення з індивідуальним підходом до кожного клієнта.</p>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Наші послуги</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Вантажні перевезення</h3>
+          <p>Перевозимо будь-які вантажі по Україні та за її межами.</p>
         </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Про компанію</h2>
-            <p>Ми – лідери у сфері перевезень з 10-річним досвідом. Пропонуємо вантажні, пасажирські та спеціальні перевезення з індивідуальним підходом до кожного клієнта.</p>
+        <div class="card">
+          <h3>Пасажирські перевезення</h3>
+          <p>Комфортні мікроавтобуси для групових поїздок.</p>
         </div>
-    </section>
-
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Наші послуги</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <h3>Вантажні перевезення</h3>
-                    <p>Перевозимо будь-які вантажі по Україні та за її межами.</p>
-                </div>
-                <div class="card">
-                    <h3>Пасажирські перевезення</h3>
-                    <p>Комфортні мікроавтобуси для групових поїздок.</p>
-                </div>
-                <div class="card">
-                    <h3>Термінові доставки</h3>
-                    <p>Сервіс експрес-доставки в межах доби.</p>
-                </div>
-            </div>
+        <div class="card">
+          <h3>Термінові доставки</h3>
+          <p>Сервіс експрес-доставки в межах доби.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <h2>Галерея</h2>
-            <div class="gallery-grid">
-                <img src="https://source.unsplash.com/400x300/?truck" alt="Фото 1">
-                <img src="https://source.unsplash.com/400x300/?van" alt="Фото 2">
-                <img src="https://source.unsplash.com/400x300/?delivery" alt="Фото 3">
-                <img src="https://source.unsplash.com/400x300/?transport" alt="Фото 4">
-            </div>
-        </div>
-    </section>
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Галерея</h2>
+      <div class="gallery-grid">
+        <img src="https://source.unsplash.com/400x300/?truck" alt="Фото 1">
+        <img src="https://source.unsplash.com/400x300/?van" alt="Фото 2">
+        <img src="https://source.unsplash.com/400x300/?delivery" alt="Фото 3">
+        <img src="https://source.unsplash.com/400x300/?transport" alt="Фото 4">
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Зв'язок з нами</h2>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Зв'язок з нами</h2>
+      
+      <!-- Форму підключаємо до Formspree -->
+      <form class="contact-form" action="https://formspree.io/f/xvgkldbe" method="POST">
+        <input type="text" name="name" placeholder="Ваше ім'я" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Повідомлення" required></textarea>
+        <button type="submit">Надіслати</button>
+      </form>
+    </div>
+  </section>
 
-            <div class="google-form">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8iV8fTXySkP1lJaplwc4JHL-lQT6H16UiE-on9meFmmUZag/viewform?embedded=true"
-                        width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Завантаження…</iframe>
-            </div>
+  <footer>
+    <div class="container">
+      <p>© 2025 TransMove. Всі права захищено.</p>
+      <p>📞 +380 99 123 4567 | 📍 Київ, вул. Транспортна, 21</p>
+    </div>
+  </footer>
 
-            <div class="contact-info">
-                <p>📞 Телефон: +380 99 123 4567</p>
-                <p>📍 Адреса: Київ, вул. Транспортна, 21</p>
-            </div>
-        </div>
-    </section>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const langBtn = document.getElementById('language-btn');
+    const langMenu = document.getElementById('language-menu');
 
-    <footer>
-        <p>© 2025 TransMove. Всі права захищено.</p>
-    </footer>
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    langBtn.addEventListener('click', () => {
+      langMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
