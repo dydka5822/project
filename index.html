@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TransMove – Послуги перевезень</title>
-   <link rel="stylesheet" href="style.css?v=1.0">
-    <script src="script.js?v=1.0"></script>
+  <link rel="stylesheet" href="style.css?v=1.0">
+  <script src="script.js?v=1.0" defer></script> <!-- defer дозволяє завантажити скрипт після завантаження HTML -->
 </head>
 <body>
   <header>
@@ -14,6 +14,7 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Truck_icon.svg/100px-Truck_icon.svg.png" alt="TransMove" />
       </div>
 
+      <!-- Навігація для ПК -->
       <nav class="nav-desktop">
         <ul class="nav-links">
           <li><a href="#about">Про нас</a></li>
@@ -33,9 +34,11 @@
         </div>
       </nav>
 
+      <!-- Кнопка для мобільного меню -->
       <button class="menu-toggle" id="menu-toggle">☰</button>
     </div>
 
+    <!-- Мобільне меню -->
     <div class="mobile-menu" id="mobile-menu">
       <ul>
         <li><a href="#about">Про нас</a></li>
@@ -53,6 +56,7 @@
     </div>
   </header>
 
+  <!-- Основна секція -->
   <section class="hero">
     <div class="container hero-text">
       <h2>Надійні перевезення по всій Україні</h2>
@@ -60,6 +64,7 @@
     </div>
   </section>
 
+  <!-- Секція "Про нас" -->
   <section id="about" class="about">
     <div class="container">
       <h2>Про компанію</h2>
@@ -67,6 +72,7 @@
     </div>
   </section>
 
+  <!-- Секція "Послуги" -->
   <section id="services" class="services">
     <div class="container">
       <h2>Наші послуги</h2>
@@ -87,6 +93,7 @@
     </div>
   </section>
 
+  <!-- Секція "Галерея" -->
   <section id="gallery" class="gallery">
     <div class="container">
       <h2>Галерея</h2>
@@ -99,11 +106,10 @@
     </div>
   </section>
 
+  <!-- Секція "Контакти" -->
   <section id="contact" class="contact">
     <div class="container">
       <h2>Зв'язок з нами</h2>
-      
-      <!-- Форму підключаємо до Formspree -->
       <form class="contact-form" action="https://formspree.io/f/xvgkldbe" method="POST">
         <input type="text" name="name" placeholder="Ваше ім'я" required>
         <input type="email" name="email" placeholder="Email" required>
@@ -113,6 +119,7 @@
     </div>
   </section>
 
+  <!-- Футер -->
   <footer>
     <div class="container">
       <p>© 2025 TransMove. Всі права захищено.</p>
@@ -120,7 +127,7 @@
     </div>
   </footer>
 
+  <!-- Підключення скрипта -->
   <script src="script.js"></script>
-  
 </body>
 </html>
