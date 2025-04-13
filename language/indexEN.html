@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TransMove – Transportation Services</title>
+  <link rel="stylesheet" href="../style/style.css?v=1.0">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Truck_icon.svg/100px-Truck_icon.svg.png" alt="TransMove" />
+      </div>
+
+      <!-- Navigation for desktop -->
+      <nav class="nav-desktop">
+        <ul class="nav-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="language-selector">
+          <button id="language-btn">🌐</button>
+          <div id="language-menu" class="language-menu">
+            <a href="../index.html">UA</a>
+            <a href="../language/indexEN.html">EN</a>
+            <a href="../language/indexPL.html">PL</a>
+            <a href="../language/indexDE.html">DE</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile menu -->
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-lang">
+        <p>Language:</p>
+            <a href="../index.html">UA</a>
+            <a href="../language/indexEN.html">EN</a>
+            <a href="../language/indexPL.html">PL</a>
+            <a href="../language/indexDE.html">DE</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="container hero-text">
+      <h2>Reliable Transportation Across Ukraine</h2>
+      <p>Fast. Safe. Comfortable.</p>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are leaders in the transportation industry with 10 years of experience. We offer cargo, passenger, and special transportation services with an individual approach to each client.</p>
+    </div>
+  </section>
+
+  <!-- Services section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Cargo Transport</h3>
+          <p>We transport any cargo within Ukraine and abroad.</p>
+        </div>
+        <div class="card">
+          <h3>Passenger Transport</h3>
+          <p>Comfortable minibuses for group trips.</p>
+        </div>
+        <div class="card">
+          <h3>Express Delivery</h3>
+          <p>Same-day express delivery service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://source.unsplash.com/400x300/?truck" alt="Photo 1">
+        <img src="https://source.unsplash.com/400x300/?van" alt="Photo 2">
+        <img src="https://source.unsplash.com/400x300/?delivery" alt="Photo 3">
+        <img src="https://source.unsplash.com/400x300/?transport" alt="Photo 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      
+      <!-- Form connected to Formspree -->
+      <form class="contact-form" action="https://formspree.io/f/xvgkldbe" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 TransMove. All rights reserved.</p>
+      <p>📞 +380 99 123 4567 | 📍 Kyiv, Transport Street, 21</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../script/script.js"></script>
+</body>
+</html>
