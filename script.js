@@ -1,12 +1,22 @@
-const toggle = document.getElementById('menu-toggle');
-const menu = document.getElementById('mobile-menu');
-const langBtn = document.getElementById('language-btn');
-const langMenu = document.getElementById('language-menu');
+document.addEventListener('DOMContentLoaded', function () {
+  // Мобільне меню
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-toggle.addEventListener('click', () => {
-  menu.classList.toggle('active');
-});
+  // Перевірка на наявність елементів перед додаванням події
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener('click', function () {
+      mobileMenu.classList.toggle('active');
+    });
+  }
 
-langBtn.addEventListener('click', () => {
-  langMenu.classList.toggle('active');
+  // Кнопка вибору мови
+  const languageBtn = document.getElementById('language-btn');
+  const languageMenu = document.getElementById('language-menu');
+
+  if (languageBtn && languageMenu) {
+    languageBtn.addEventListener('click', function () {
+      languageMenu.classList.toggle('active');
+    });
+  }
 });
